@@ -1,0 +1,700 @@
+{
+  "id": "millennial",
+  "label": "Millennial",
+  "years": "1981–1996",
+  "laughter": {
+    "trailing": {
+      "text": "lol",
+      "weight": 0.85,
+      "confidence": "medium",
+      "status": "fading",
+      "sources": [
+        {
+          "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "LadBible (millennial author) describes millennials as LOL/LMAO users, in contrast with the Gen Z skull. Wikipedia LOL page fetched but has no generational claims. NewsNation/Fast Company pages 403'd. Fading as Gen Z moves on.",
+      "needsReview": false
+    },
+    "mid": {
+      "text": "haha",
+      "weight": 0.5,
+      "confidence": "low",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wiktionary.org/api/rest_v1/page/definition/haha",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Universal; low discriminating power. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+      "needsReview": true,
+      "labels": []
+    },
+    "intense": {
+      "text": "lmao 😂",
+      "weight": 0.75,
+      "confidence": "medium",
+      "status": "fading",
+      "sources": [
+        {
+          "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "lmao: millennial per LadBible. 😂: Dictionary.com says millennials favoured it; Wikipedia says Gen Z now treat it as an older-generation emoji. Shared with boomer intense.",
+      "needsReview": true
+    }
+  },
+  "lexicon": {
+    "excellent": [
+      {
+        "text": "on fleek",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/on-fleek",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: coined June 2014 by Chicago teen Kayla Newman via Vine; RD jokes that millennials used it only briefly before it turned cringe. Peak ~2014-15; now dated/ironic. Coiner was a teen in 2014 (born ~late 90s), so generational attribution is blurry.",
+        "needsReview": true
+      },
+      {
+        "text": "amazeballs",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/amazeballs",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Widely mocked as 'cringey millennial slang' (search snippets only, not fetched). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "epic",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/epic",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic; used across generations. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Only an unrelated colloquial sense is labelled; the matching use has no label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "cool": [
+      {
+        "text": "dope",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/dope",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: black slang/hip-hop 'excellent', quoted from Clueless (1995) and Lana Del Rey (2012). Shared with Gen X; not exclusively millennial.",
+        "needsReview": false
+      },
+      {
+        "text": "lit",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "medium",
+        "status": "fading",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/its-lit",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "SOURCES DISAGREE: Dictionary.com (2018) ties it to youth slang (hashtag data for under-35s), while RD files it under Gen Z and calls it borderline cheugy; Wikipedia lists it in the 2020s glossary. Shared millennial/Gen Z, now fading.",
+        "needsReview": true
+      }
+    ],
+    "honestly": [
+      {
+        "text": "tbh",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/tbh",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Text-speak; heavily used by millennials and Gen Z alike. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled text messaging, Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang",
+          "text messaging"
+        ]
+      },
+      {
+        "text": "honestly",
+        "standalone": false,
+        "weight": 0.15,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/honestly",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Research recommends removal (action \"remove\"); kept because confidence is low. Reason: Identity mapping ('honestly' -> 'honestly'): a no-op with zero generational signal. Wiktionary re-vet: The matching sense is unlabeled; the informal label is on a different sense; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "seriously": [
+      {
+        "text": "literally",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/literally",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia (Literally) says intensifier use goes back centuries and is a prescriptivist bugbear; no source ties it to millennials. Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching intensifier senses are labelled colloquial and proscribed; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial",
+          "proscribed"
+        ]
+      }
+    ],
+    "agree": [
+      {
+        "text": "100%",
+        "standalone": true,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/100%25",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Listed as an alternative form of \"one hundred percent\", no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "same",
+        "standalone": true,
+        "weight": 0.35,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/same",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Heavily used by Gen Z too. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang"
+        ]
+      }
+    ],
+    "lying": [
+      {
+        "text": "fake news",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/fake_news",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Research recommends removal (action \"remove\"); kept because confidence is low. Reason: Political term (2016-17), not a generational marker and not a synonym for 'lying' in a friend-chat sense. Recommend removal. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "trolling",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/trolling",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Research recommends removal (action \"remove\"); kept because confidence is low. Reason: 'Trolling' = provoking, not lying. Wrong concept. Recommend removal. Wiktionary re-vet: The Internet sense is unlabeled; stays low.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": []
+      }
+    ],
+    "no_lie": [
+      {
+        "text": "legit",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/legit",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "for reals",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/for_reals",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "resembles": [
+      {
+        "text": "it's very much",
+        "standalone": false,
+        "weight": 0.1,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Research recommends removal (action \"remove\"); kept because confidence is low. Reason: Plain English, not slang; no generational signal. Recommend removal. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "embarrassing": [
+      {
+        "text": "cringey",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.the-independent.com/life-style/thumbs-up-emoji-gen-z-rude-b2583776.html",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/cringey",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Independent frames 'cringe'/'cheugy' as Gen Z's verdict ON millennial habits; millennials did say 'cringey' but sources lean Gen Z. Shared; weight low. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "awkward",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/awkward",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Plain English. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "friend": [
+      {
+        "text": "bestie",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/bestie",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Shared with Gen Z. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Senses are unlabeled, though the page sits in English informal terms; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "squad",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/squad",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "~2015 'squad goals' era (UNVERIFIED). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "okay": [
+      {
+        "text": "kk",
+        "standalone": false,
+        "weight": 0.55,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/kk",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Search snippets (Inc., HuffPost, Language Log) discuss 'k/kk' being read as rude, but those pages were not fetchable. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang"
+        ]
+      },
+      {
+        "text": "okie dokie",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/okie_dokie",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Old expression; more boomer than millennial. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "very": [
+      {
+        "text": "super",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/super",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "hella",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Hella",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia: Northern California (Oakland/East Bay) regionalism, 1970s origin, in OED 2002 citing 1987, spread widely by 1997. Regional, not a millennial marker.",
+        "needsReview": false
+      }
+    ],
+    "drama": [
+      {
+        "text": "drama",
+        "standalone": false,
+        "weight": 0.1,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/drama",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Research recommends removal (action \"remove\"); kept because confidence is low. Reason: Identity mapping ('drama' -> 'drama'): a no-op. Wiktionary re-vet: The matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": true,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "drama llama",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/drama_llama",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The entry is labelled slang, a loose fit for the concept; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "jealous": [
+      {
+        "text": "jelly",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/jelly",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "goodbye": [
+      {
+        "text": "ttyl",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/ttyl",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Early-text-speak ('talk to you later'); Dictionary.com page 404'd. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled text messaging, Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang",
+          "text messaging"
+        ]
+      },
+      {
+        "text": "byeee",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Generic stretched spelling. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "wow": [
+      {
+        "text": "OMG",
+        "standalone": false,
+        "weight": 0.55,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/OMG",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Shared across ages; Wikipedia Internet_slang fetched but not read for this. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled text messaging; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "text messaging"
+        ]
+      },
+      {
+        "text": "oh em gee",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "medium",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/oh_em_gee",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "main_character": [
+      {
+        "text": "living my best life",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [],
+        "notes": "Concept mismatch: MEANING MISMATCH: 'living my best life' = enjoying life, not 'acting like the protagonist'. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": []
+      }
+    ],
+    "nailed_it": [
+      {
+        "text": "nailed it",
+        "standalone": false,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/nailed_it",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "killing it",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/killing_it",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "carpe_diem": [
+      {
+        "text": "YOLO",
+        "standalone": true,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/YOLO_(aphorism)",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia: popular in 2012 after Drake's 'The Motto' (single released 2011-11-29); now an ironic millennial relic. New concept 'carpe_diem'.",
+        "needsReview": false
+      }
+    ],
+    "adulting": [
+      {
+        "text": "adulting",
+        "standalone": false,
+        "weight": 0.75,
+        "confidence": "medium",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD names 'adulting' among the 'old Millennial energy' that Gen Z calls cheugy. Single source. New concept 'adulting'.",
+        "needsReview": false
+      }
+    ]
+  }
+}

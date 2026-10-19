@@ -1,0 +1,2 @@
+# Template only. After AdSense approval, replace pub-XXXXXXXXXXXXXXXX with your publisher ID (without the "ca-" prefix), then rename this file to ads.txt. Never ship ads.txt with placeholder data.
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

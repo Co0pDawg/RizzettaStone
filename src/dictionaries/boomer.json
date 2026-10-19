@@ -1,0 +1,750 @@
+{
+  "id": "boomer",
+  "label": "Boomer",
+  "years": "1946–1964",
+  "laughter": {
+    "trailing": {
+      "text": "👍",
+      "weight": 0.6,
+      "confidence": "medium",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.the-independent.com/life-style/thumbs-up-emoji-gen-z-rude-b2583776.html",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Gen Z reads 👍 as sarcastic or passive-aggressive (Dictionary.com 2022); Independent (37-y-o author) calls it a neutral 'got that', i.e. an older-cohort habit. Neither names boomers directly. It is an ACKNOWLEDGEMENT, not laughter, so it is a poor 'trailing laugh'. Keep only as a boomer marker.",
+      "needsReview": true,
+      "conceptMismatch": true
+    },
+    "mid": {
+      "text": "Ha ha!",
+      "weight": 0.5,
+      "confidence": "low",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wiktionary.org/api/rest_v1/page/definition/ha_ha",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Spelled-out 'Ha ha!' with capital and punctuation is plausible formal-texter style but I fetched no source. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+      "needsReview": true,
+      "labels": []
+    },
+    "intense": {
+      "text": "LOL!! 😂😂😂",
+      "weight": 0.6,
+      "confidence": "medium",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "😂 is now perceived by Gen Z as an older-generation emoji ('uncool'; Emojipedia founder quoted in LadBible: 'for boomers'). 'LOL' itself is more millennial (LadBible). Overlaps millennial intense 'lmao 😂'.",
+      "needsReview": true
+    }
+  },
+  "style": {
+    "ellipsis": true
+  },
+  "signoff": "Love, Mom",
+  "styleMarkers": {
+    "ellipsis": {
+      "text": "ellipsis ('...')",
+      "weight": 0.8,
+      "confidence": "medium",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://www.purewow.com/tech/why-do-boomers-use-ellipses",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "PureWow, citing linguist Gretchen McCulloch: the trailing dots are meant to sound casual, an offline habit carried online; Gen Z reads them as passive-aggressive (TikTok examples of professor/manager emails). Page read to the truncation point only.",
+      "needsReview": false
+    },
+    "signoff": {
+      "text": "'Love, Mom' signoff",
+      "weight": 0.5,
+      "confidence": "low",
+      "status": "current",
+      "sources": [],
+      "notes": "No source fetched. UNVERIFIED: there is a well-known folk story that boomers read LOL as 'lots of love', but I could not fetch a page that confirms it, so it is not claimed. Wiktionary re-vet: A behaviour rather than a headword, so Wiktionary cannot confirm it.",
+      "needsReview": true,
+      "labels": []
+    }
+  },
+  "lexicon": {
+    "excellent": [
+      {
+        "text": "wonderful",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/wonderful",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic polite English, not a boomer marker. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled (standard English); stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "terrific",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/terrific",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "swell",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/swell",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary confirms 'excellent' sense only. UNVERIFIED: 'swell' peaks 1930s-50s, i.e. Silent/Greatest-generation speech more than boomer. Lower priority; keep as flavour only. Wiktionary re-vet: Matching sense is labelled dated, slang; register confirmed but the generation is not established by labels; Wiktionary also confirms the dated status.",
+        "needsReview": false,
+        "labels": [
+          "dated",
+          "slang"
+        ]
+      },
+      {
+        "text": "outta sight",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/outta_sight",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "1960s slang (UNVERIFIED). Wiktionary re-vet: Labelled slang as a variant of \"out of sight\"; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "cool": [
+      {
+        "text": "neat",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/neat",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Mild, mid-century. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The sense matching the concept is labelled colloquial (North American); register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "North American",
+          "colloquial"
+        ]
+      },
+      {
+        "text": "groovy",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "high",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Groovy",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/groovy",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia dates its popularity to the late 1950s through the early 1970s (boomer youth); RD pairs groovy with boomers. Now dated/ironic; best boomer 'cool' word. Should be primary for cool.",
+        "needsReview": false
+      }
+    ],
+    "honestly": [
+      {
+        "text": "to be honest",
+        "standalone": false,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/to_be_honest",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense carries only idiomatic labels, no slang/informal label; stays low.",
+        "needsReview": true,
+        "labels": [
+          "idiomatic"
+        ]
+      },
+      {
+        "text": "frankly",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/frankly",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic, slightly formal. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "seriously": [
+      {
+        "text": "for heaven's sake",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/for_heaven%27s_sake",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: Exasperation interjection, not an 'I mean it' opener, so the concept fit is loose. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense carries only idiomatic, euphemistic labels, no slang/informal label; stays low.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": [
+          "euphemistic",
+          "idiomatic"
+        ]
+      },
+      {
+        "text": "for Pete's sake",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/for_Pete's_sake",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/for_Pete%27s_sake",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: Wiktionary: interjection of frustration/exasperation (definition only, no generational data). Loose fit to 'seriously'. Iconic in older American speech (UNVERIFIED). Wiktionary re-vet: Matching sense carries only minced oath labels, no slang/informal label; stays low.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": [
+          "minced oath"
+        ]
+      }
+    ],
+    "agree": [
+      {
+        "text": "absolutely",
+        "standalone": true,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/absolutely",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "indeed",
+        "standalone": true,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/indeed",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Formal/British-leaning, generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "right on",
+        "standalone": true,
+        "weight": 0.6,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/right_on",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "1960s-70s counterculture affirmation (UNVERIFIED: no page fetched that attests it). Wiktionary re-vet: One enthusiasm sense is labelled dated and the agreement sense is unlabeled; stays low; Wiktionary also confirms the dated status.",
+        "needsReview": true,
+        "labels": [
+          "US",
+          "dated",
+          "idiomatic"
+        ]
+      }
+    ],
+    "lying": [
+      {
+        "text": "telling stories",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [],
+        "notes": "Old-fashioned euphemism. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "fibbing",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/fibbing",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Mild euphemism, parent-to-child register. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled informal; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "informal"
+        ]
+      }
+    ],
+    "no_lie": [
+      {
+        "text": "I kid you not",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/I_kid_you_not",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Mid-century catchphrase (UNVERIFIED). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled colloquial; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial"
+        ]
+      }
+    ],
+    "resembles": [
+      {
+        "text": "reminds me of",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Plain English, not slang; zero generational signal. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "embarrassing": [
+      {
+        "text": "mortifying",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/mortifying",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Plain English. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "friend": [
+      {
+        "text": "pal",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/pal",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled colloquial; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial"
+        ]
+      },
+      {
+        "text": "buddy",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_early_twentieth_century_slang_in_the_United_States",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/buddy",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia early-20th-century slang glossary lists 'buddy' (companion in arms; chum), so the word is older than boomers and now generic. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "okay": [
+      {
+        "text": "OK",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/OK",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Universal. Younger readers may read bare 'OK' as curt, but that is not a boomer marker. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "alrighty",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/alrighty",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled informal; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "informal"
+        ]
+      }
+    ],
+    "very": [
+      {
+        "text": "awfully",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_early_twentieth_century_slang_in_the_United_States",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/awfully",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Early-20th-century glossary lists 'awfully' = very much, so it is older than boomer and generic. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "terribly",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/terribly",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "drama": [
+      {
+        "text": "hullabaloo",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/hullabaloo",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary definition only ('clamour, commotion, fuss'). Old-fashioned; no generational data. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "a big fuss",
+        "standalone": false,
+        "weight": 0.2,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Plain English. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "jealous": [
+      {
+        "text": "green with envy",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/green_with_envy",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Idiom, not generational. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense carries only idiomatic labels, no slang/informal label; stays low.",
+        "needsReview": true,
+        "labels": [
+          "idiomatic"
+        ]
+      },
+      {
+        "text": "envious",
+        "standalone": false,
+        "weight": 0.15,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/envious",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Plain English. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled; the obsolete labels sit on other senses; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "goodbye": [
+      {
+        "text": "toodle-oo",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/toodle-oo",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary fetch failed (rate-limited). UNVERIFIED: British-flavoured and older than boomer. Wiktionary re-vet: Matching sense carries only UK, Ireland, dated labels, no slang/informal label; stays low; Wiktionary also confirms the dated status.",
+        "needsReview": true,
+        "labels": [
+          "Ireland",
+          "UK",
+          "dated"
+        ]
+      },
+      {
+        "text": "see you later, alligator",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/See_You_Later,_Alligator",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia: 1956 Bill Haley hit (written 1955 by Bobby Charles); a 1950s teen catchphrase, so it fits the older edge of boomers and the Silent Generation. Best boomer goodbye.",
+        "needsReview": false
+      }
+    ],
+    "wow": [
+      {
+        "text": "my goodness",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/my_goodness",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense carries only US, Canada, minced oath labels, no slang/informal label; stays low.",
+        "needsReview": true,
+        "labels": [
+          "Canada",
+          "US",
+          "minced oath"
+        ]
+      },
+      {
+        "text": "goodness gracious",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/goodness_gracious",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense carries only idiomatic, euphemistic, dated labels, no slang/informal label; stays low; Wiktionary also confirms the dated status.",
+        "needsReview": true,
+        "labels": [
+          "dated",
+          "euphemistic",
+          "idiomatic"
+        ]
+      },
+      {
+        "text": "far out",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Hippie",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/far_out",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia 'Hippie' page confirms the movement's age profile (youngest Silent / oldest boomers), but I could not find 'far out' itself on any fetched page. UNVERIFIED. Wiktionary re-vet: The matching sense is labelled informal and dated; register confirmed but the generation is not established by labels; Wiktionary also confirms the dated status.",
+        "needsReview": false,
+        "labels": [
+          "dated",
+          "informal"
+        ]
+      }
+    ],
+    "main_character": [
+      {
+        "text": "the belle of the ball",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/belle_of_the_ball",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Idiom, not slang; reasonable stand-in. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The idiom has an entry but no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "nailed_it": [
+      {
+        "text": "did a bang-up job",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_early_twentieth_century_slang_in_the_United_States",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/bang-up",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Early-20th-century glossary lists 'bang-up' = first rate: older than boomer. Fine as flavour. Wiktionary re-vet: Only the component \"bang-up\" (colloquial) is attested; the full phrase has no entry; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial"
+        ]
+      }
+    ]
+  }
+}

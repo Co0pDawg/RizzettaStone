@@ -1,0 +1,29 @@
+{
+  "site": {
+    "name": "Rizzetta Stone",
+    "tagline": "Fluent in 💀, 😂, and 'Love, Mom.'",
+    "repo": "RizzettaStone",
+    "owner": "Co0pDawg",
+    "domain": "rizzettastone.app",
+    "url": "https://rizzettastone.app/",
+    "watermarkText": "rizzettastone.app"
+  },
+  "deploy": {
+    "base": "",
+    "customDomainEnabled": false,
+    "customDomain": "rizzettastone.app"
+  },
+  "ads": {
+    "provider": "none",
+    "adsense": {
+      "publisherId": "ca-pub-XXXXXXXXXXXXXXXX",
+      "slots": {
+        "belowOutput": "0000000000"
+      }
+    }
+  },
+  "consent": {
+    "enabled": false,
+    "cmp": "placeholder"
+  }
+}

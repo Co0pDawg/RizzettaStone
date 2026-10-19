@@ -1,3 +1,5 @@
 node_modules/
 dist/
 artifacts/
+.cache/
+data/verify-sources-report.md

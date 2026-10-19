@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{SITE_NAME}}</title>
+    <meta name="description" content="{{SITE_NAME}}: {{SITE_TAGLINE}} Translate texts between Boomer, Gen X, Millennial, Gen Z, and Gen Alpha, right in your browser." />
+    <link rel="canonical" href="{{SITE_URL}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{SITE_NAME}}" />
+    <meta property="og:description" content="{{SITE_TAGLINE}} Translate texts between Boomer, Gen X, Millennial, Gen Z, and Gen Alpha." />
+    <meta property="og:url" content="{{SITE_URL}}" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%80%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>{{SITE_NAME}}</h1>
+        <p class="tagline" data-testid="tagline">{{SITE_TAGLINE}}</p>
+        <p class="subtitle">Translate your texts between Boomer, Gen X, Millennial, Gen Z, and Gen Alpha. No AI, just vibes and a dictionary.</p>
+      </header>
+
+      <section class="controls" aria-label="Conversion settings">
+        <label class="select">
+          <span>From</span>
+          <select id="from" data-testid="from-select"></select>
+        </label>
+        <button type="button" id="swap" class="icon-btn" data-testid="swap" title="Swap generations" aria-label="Swap generations">⇄</button>
+        <label class="select">
+          <span>To</span>
+          <select id="to" data-testid="to-select"></select>
+        </label>
+        <label class="ai-toggle" title="Coming soon">
+          <input type="checkbox" disabled data-testid="ai-mode" />
+          <span>AI mode (coming soon)</span>
+        </label>
+      </section>
+
+      <section class="panes">
+        <div class="pane">
+          <div class="pane-head">
+            <h2 id="input-label">Original</h2>
+            <button type="button" id="example" class="btn ghost" data-testid="example">Example</button>
+          </div>
+          <textarea id="input" data-testid="input" aria-labelledby="input-label" rows="8" placeholder="Paste a text message…"></textarea>
+        </div>
+        <div class="pane">
+          <div class="pane-head">
+            <h2 id="output-label">Converted</h2>
+            <button type="button" id="copy" class="btn ghost" data-testid="copy">Copy</button>
+          </div>
+          <output id="output" data-testid="output" aria-labelledby="output-label" aria-live="polite"></output>
+          <p id="changes" class="changes" data-testid="changes"></p>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button type="button" id="download" class="btn primary" data-testid="download">Download share card</button>
+        <span id="status" class="status" role="status"></span>
+      </section>
+
+      <aside id="ad-slot" class="ad-slot" data-testid="ad-slot" aria-label="Advertisement" hidden></aside>
+
+      <footer class="foot">
+        Rule-based: your text never leaves your browser. Edit the slang in <code>src/dictionaries/</code>.
+        <a href="privacy.html" data-testid="privacy-link">Privacy policy</a>
+        <span class="disclaimer" data-testid="parody-disclaimer">Parody. Not affiliated with or endorsed by Rosetta Stone.</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

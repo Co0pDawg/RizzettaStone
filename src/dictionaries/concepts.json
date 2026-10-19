@@ -1,0 +1,122 @@
+{
+  "excellent": {
+    "plain": "excellent",
+    "description": "Something is really good."
+  },
+  "cool": {
+    "plain": "cool",
+    "description": "Something is stylish or approved of."
+  },
+  "honestly": {
+    "plain": "honestly",
+    "description": "Opener that signals a candid opinion."
+  },
+  "seriously": {
+    "plain": "seriously",
+    "description": "Emphatic opener or intensifier: I mean it."
+  },
+  "agree": {
+    "plain": "agreed",
+    "description": "A one-word reply that means yes, I agree."
+  },
+  "lying": {
+    "plain": "lying",
+    "description": "Someone is not telling the truth."
+  },
+  "no_lie": {
+    "plain": "no lie",
+    "description": "Swearing that what follows is true."
+  },
+  "resembles": {
+    "plain": "it looks like",
+    "description": "It resembles or evokes something (\"it's giving\")."
+  },
+  "embarrassing": {
+    "plain": "embarrassing",
+    "description": "Cringe-worthy or awkward."
+  },
+  "friend": {
+    "plain": "friend",
+    "description": "A close friend, often as a form of address."
+  },
+  "okay": {
+    "plain": "okay",
+    "description": "Acknowledgement: sounds good, will do."
+  },
+  "very": {
+    "plain": "very",
+    "description": "Intensifier before an adjective."
+  },
+  "drama": {
+    "plain": "drama",
+    "description": "Gossip, conflict, or the juicy story."
+  },
+  "jealous": {
+    "plain": "jealous",
+    "description": "Envious or bitter about someone else."
+  },
+  "goodbye": {
+    "plain": "goodbye",
+    "description": "Signing off or leaving."
+  },
+  "wow": {
+    "plain": "wow",
+    "description": "Exclamation of surprise."
+  },
+  "main_character": {
+    "plain": "the star of the show",
+    "description": "Acting like the protagonist; the center of attention."
+  },
+  "nailed_it": {
+    "plain": "did great",
+    "description": "Performed impressively."
+  },
+  "disbelief": {
+    "plain": "yeah, right",
+    "description": "Scoffing disbelief: as if that would happen."
+  },
+  "overreacting": {
+    "plain": "losing it",
+    "description": "Freaking out, acting irrationally or having a meltdown."
+  },
+  "dismiss": {
+    "plain": "I'm not listening",
+    "description": "Dismissive brush-off: stop talking, I don't want to hear it."
+  },
+  "mediocre": {
+    "plain": "mediocre",
+    "description": "Average, unimpressive."
+  },
+  "delusional": {
+    "plain": "delusional",
+    "description": "Unrealistically hopeful or in denial, often playfully."
+  },
+  "doomed": {
+    "plain": "in big trouble",
+    "description": "Failed or about to face the consequences."
+  },
+  "so_so": {
+    "plain": "so-so",
+    "description": "Meh; maybe this, maybe that."
+  },
+  "charisma": {
+    "plain": "charm",
+    "description": "Charm, especially skill at flirting."
+  },
+  "food_tax": {
+    "plain": "taking a bite of your food",
+    "description": "Jokingly swiping some of a friend's food."
+  },
+  "overpraising": {
+    "plain": "over-praising",
+    "description": "Complimenting someone far too much, usually insincerely."
+  },
+  "carpe_diem": {
+    "plain": "you only live once",
+    "description": "Make the most of the moment; take the risk."
+  },
+  "adulting": {
+    "plain": "doing grown-up things",
+    "description": "Handling adult responsibilities, usually with a wink."
+  }
+}

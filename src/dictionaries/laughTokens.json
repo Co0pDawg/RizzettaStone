@@ -1,0 +1,389 @@
+[
+  {
+    "text": "lol",
+    "primaryGeneration": "millennial",
+    "pattern": "l+o+l+(?:o+l+)*",
+    "word": true,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.85,
+    "confidence": "medium",
+    "status": "fading",
+    "sources": [
+      {
+        "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "LadBible (millennial author) associates 'LOLing and LMAO' with millennials; Gen Z prefers the skull. Used across all ages, so the weight is for millennial association only.",
+    "needsReview": false
+  },
+  {
+    "text": "lmao / lmfao",
+    "primaryGeneration": "millennial",
+    "pattern": "lmf?ao+",
+    "word": true,
+    "standalone": false,
+    "intense": true,
+    "weight": 0.7,
+    "confidence": "medium",
+    "status": "fading",
+    "sources": [
+      {
+        "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Same LadBible evidence; engine treats it as 'intense'.",
+    "needsReview": false
+  },
+  {
+    "text": "rofl / roflmao",
+    "primaryGeneration": "millennial",
+    "pattern": "rofl(?:mao)?",
+    "word": true,
+    "standalone": false,
+    "intense": true,
+    "weight": 0.5,
+    "confidence": "medium",
+    "status": "dated",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/LOL",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wiktionary.org/api/rest_v1/page/definition/ROFL",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Wikipedia LOL page lists the family but makes no generational claim. UNVERIFIED 2000s-era association. Wiktionary re-vet: ROFL/ROFLMAO are labelled text messaging and Internet slang; register confirmed but the generation is not established by labels.",
+    "needsReview": false,
+    "labels": [
+      "Internet",
+      "slang",
+      "text messaging",
+      "vulgar"
+    ]
+  },
+  {
+    "text": "haha / hahaha / ha ha",
+    "primaryGeneration": "shared",
+    "pattern": "(?:ha){2,}h?|(?:ah){2,}h?|ha(?:[ \\t]ha)+",
+    "word": true,
+    "standalone": false,
+    "intense": false,
+    "intenseMinBeats": 3,
+    "weight": 0.3,
+    "confidence": "low",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wiktionary.org/api/rest_v1/page/definition/haha",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Universal; low discriminating power. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+    "needsReview": true,
+    "labels": []
+  },
+  {
+    "text": "heh / hehe",
+    "primaryGeneration": "genx",
+    "pattern": "he(?:he)+h?|heh",
+    "word": true,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.4,
+    "confidence": "low",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wiktionary.org/api/rest_v1/page/definition/heh",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+    "needsReview": true,
+    "labels": []
+  },
+  {
+    "text": "😂",
+    "primaryGeneration": "boomer",
+    "pattern": "😂",
+    "word": false,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.7,
+    "confidence": "medium",
+    "status": "fading",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Wikipedia: Gen Z began associating it with older generations ('uncool') from the early 2020s, replacing it with 😭/💀; Emojipedia founder: 'for boomers' (via LadBible). Dictionary.com: millennials favoured it. Overlaps boomer + millennial.",
+    "needsReview": false
+  },
+  {
+    "text": "🤣",
+    "primaryGeneration": "shared",
+    "pattern": "🤣",
+    "word": false,
+    "standalone": false,
+    "intense": true,
+    "weight": 0.4,
+    "confidence": "low",
+    "status": "current",
+    "sources": [],
+    "notes": "Engine counts it as intense 😂. No fetched source separates it from 😂. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: A Wiktionary page exists but has no English section, so it stays low.",
+    "needsReview": true,
+    "labels": []
+  },
+  {
+    "text": "💀",
+    "primaryGeneration": "genz",
+    "pattern": "💀",
+    "word": false,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.95,
+    "confidence": "high",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Skull_emoji",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Wikipedia's skull-emoji page says it is especially popular with Gen Z and Gen Alpha.",
+    "needsReview": false
+  },
+  {
+    "text": "😭",
+    "primaryGeneration": "genz",
+    "pattern": "😭",
+    "word": false,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.85,
+    "confidence": "high",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Positive overwhelm / laughter among Gen Z (Dictionary.com); Wikipedia: replacement for 'I'm dying'.",
+    "needsReview": false
+  },
+  {
+    "text": "👍",
+    "primaryGeneration": "boomer",
+    "pattern": "👍",
+    "word": false,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.6,
+    "confidence": "medium",
+    "status": "fading",
+    "sources": [
+      {
+        "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://www.the-independent.com/life-style/thumbs-up-emoji-gen-z-rude-b2583776.html",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Acknowledgement, not laughter. Gen Z reads it as sarcastic/passive-aggressive (Dictionary.com); Independent defends it as neutral workplace shorthand.",
+    "needsReview": false
+  },
+  {
+    "text": "Ha ha!",
+    "primaryGeneration": "boomer",
+    "pattern": "ha ha!",
+    "word": true,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.5,
+    "confidence": "low",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wiktionary.org/api/rest_v1/page/definition/ha_ha",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+    "needsReview": true,
+    "labels": []
+  },
+  {
+    "text": "help+ (HELPPP)",
+    "primaryGeneration": "genz",
+    "pattern": "help+",
+    "word": true,
+    "standalone": true,
+    "intense": true,
+    "weight": 0.45,
+    "confidence": "medium",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wiktionary.org/api/rest_v1/page/definition/help",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Engine shape; no fetched source attests it as a laugh token. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: \"help\" has an Internet-slang and text-messaging sense for laughter; register confirmed but the generation is not established by labels.",
+    "needsReview": false,
+    "labels": [
+      "Internet",
+      "slang",
+      "text messaging"
+    ]
+  },
+  {
+    "text": "i'm dead / ded",
+    "primaryGeneration": "genz",
+    "pattern": "i'?m (?:dead|ded)|ded",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.85,
+    "confidence": "medium",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Skull_emoji",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Wikipedia glossary (dead/ded): finding something so funny you are figuratively dying; the skull emoji stands for 'I'm dying'. Engine regex has 'dead' but NOT 'dying' or 'ded'; evidence supports adding both.",
+    "needsReview": false
+  },
+  {
+    "text": "i'm crying",
+    "primaryGeneration": "genz",
+    "pattern": "i'?m crying",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.6,
+    "confidence": "medium",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://knowyourmeme.com/memes/im-crine",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "Wikipedia 'crine' entry: equivalent to 'I'm crying' = crying with laughter.",
+    "needsReview": false
+  },
+  {
+    "text": "i'm crine",
+    "primaryGeneration": "genalpha",
+    "pattern": "i'?m crine",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.75,
+    "confidence": "medium",
+    "status": "current",
+    "sources": [
+      {
+        "url": "https://knowyourmeme.com/memes/im-crine",
+        "retrieved": "2026-10-19"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+        "retrieved": "2026-10-19"
+      }
+    ],
+    "notes": "KYM and Wikipedia; 2013 AAVE origin, mass-spread 2025.",
+    "needsReview": false
+  },
+  {
+    "text": "i'm weak",
+    "primaryGeneration": "genz",
+    "pattern": "i'?m weak",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.45,
+    "confidence": "low",
+    "status": "current",
+    "sources": [],
+    "notes": "Engine shape; not attested in any fetched source. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
+    "needsReview": true,
+    "labels": []
+  },
+  {
+    "text": "dying / i'm dying",
+    "primaryGeneration": "genz",
+    "pattern": "(?:i'?m )?dying",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.5,
+    "confidence": "low",
+    "status": "current",
+    "sources": [],
+    "notes": "not covered by research. Added by orchestrator decision B1a; the research notes for \"i'm dead / ded\" cite Dictionary.com for \"I'm dying\".",
+    "needsReview": true
+  },
+  {
+    "text": "i'm deceased",
+    "primaryGeneration": "genz",
+    "pattern": "i'?m deceased",
+    "word": true,
+    "standalone": true,
+    "intense": false,
+    "weight": 0.5,
+    "confidence": "low",
+    "status": "current",
+    "sources": [],
+    "notes": "not covered by research",
+    "needsReview": true
+  }
+]

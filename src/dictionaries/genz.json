@@ -1,0 +1,880 @@
+{
+  "id": "genz",
+  "label": "Gen Z",
+  "years": "1997–2012",
+  "laughter": {
+    "trailing": {
+      "text": "💀",
+      "weight": 0.95,
+      "confidence": "high",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Skull_emoji",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://www.ladbible.com/community/gen-z-old-emoji-crying-laughing-face-183479-20251207",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Dictionary.com (2022): Gen Z sends lines of skulls to say they are laughing hard; Wikipedia: especially popular with Gen Z and Gen Alpha; LadBible agrees. Shared with Alpha.",
+      "needsReview": false
+    },
+    "mid": {
+      "text": "😭",
+      "weight": 0.85,
+      "confidence": "high",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://knowyourmeme.com/memes/im-crine",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Dictionary.com: Gen Z 😭 signals overwhelming cute/funny, not sadness; Wikipedia: replacement for 'I'm dying' / tears-of-joy.",
+      "needsReview": false
+    },
+    "intense": {
+      "text": "HELPPP 😭😭",
+      "weight": 0.5,
+      "confidence": "medium",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wiktionary.org/api/rest_v1/page/definition/help",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "The 😭😭 part is attested; the stretched 'HELPPP' is not attested in any fetched source (engine already detects 'help+'). Evidence-backed alternative: 'I'm dead 💀💀💀' (Wikipedia: 'dead/ded' = laughing to death; Dictionary.com: skull lines). Wiktionary re-vet: \"help\" has an Internet-slang and text-messaging sense for laughter; register confirmed but the generation is not established by labels.",
+      "needsReview": false,
+      "proposedText": "I'm dead 💀💀💀",
+      "labels": [
+        "Internet",
+        "slang",
+        "text messaging"
+      ]
+    }
+  },
+  "lexicon": {
+    "excellent": [
+      {
+        "text": "bussin",
+        "standalone": false,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://knowyourmeme.com/memes/bussin",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.yahoo.com/lifestyle/trendy-gen-z-slang-added-141353340.html",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "KYM: Urban Dictionary 2017 origin, delicious food; Merriam-Webster added it in 2024 (via Yahoo); RD: mostly a food word, reads as try-hard from adults. MW page itself 403'd. Food-specific, so weaker as a generic 'excellent'.",
+        "needsReview": false
+      },
+      {
+        "text": "fire",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.dictionary.com/articles/gen-z-explains-emoji-to-millennials",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: the 🔥 emoji is used across generations; Wikipedia lists it. Cross-generational, so weight is generic (primary-selection should avoid it).",
+        "needsReview": false
+      },
+      {
+        "text": "slaps",
+        "standalone": false,
+        "weight": 0.65,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia and RD both list it (esp. music). Fine as a Gen Z flavour.",
+        "needsReview": false
+      }
+    ],
+    "cool": [
+      {
+        "text": "valid",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/valid",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No sense found for the approval slang use; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "hits different",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: RD: describes something that feels unusually striking or impactful. Slight meaning drift vs 'cool' (it means 'better in the moment'), but okay.",
+        "needsReview": true,
+        "conceptMismatch": true
+      }
+    ],
+    "honestly": [
+      {
+        "text": "ngl",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/ngl",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Abbreviation of 'not gonna lie'. Very well known but no page fetched lists it. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled text messaging, Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang",
+          "text messaging"
+        ]
+      },
+      {
+        "text": "not gonna lie",
+        "standalone": false,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Expanded form is generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "seriously": [
+      {
+        "text": "no bc",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/bc",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: \"bc\" (because) is labelled text messaging, but the phrase and a matching sense are absent; stays low.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "no because",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
+        "needsReview": true,
+        "labels": []
+      },
+      {
+        "text": "deadass",
+        "standalone": false,
+        "weight": 0.55,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/deadass",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://knowyourmeme.com/memes/deadass",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: NYC slang since the late 90s-2000s, 'seriously'; KYM: spiked fall 2016 on Black Twitter, origin NYC. Regional/AAVE; shared with Gen Alpha.",
+        "needsReview": false
+      },
+      {
+        "text": "frfr",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD: 'for real, for real', doubles down on honesty, often paired with no cap. Shared with Gen Alpha (existing 'fr fr').",
+        "needsReview": false
+      }
+    ],
+    "agree": [
+      {
+        "text": "real",
+        "standalone": true,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/real",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: A slang sense exists that loosely fits agreement; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "facts",
+        "standalone": true,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/facts",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "slang"
+        ]
+      }
+    ],
+    "lying": [
+      {
+        "text": "capping",
+        "standalone": false,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://knowyourmeme.com/memes/no-cap-cap-capping",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.fox5ny.com/news/from-6-7-skibidi-gen-alpha-slang-decoded",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "KYM: popularised ~2017 via Atlanta hip-hop; Fox5, Wikipedia, RD agree. Shared with Gen Alpha.",
+        "needsReview": false
+      },
+      {
+        "text": "cap",
+        "standalone": true,
+        "weight": 0.9,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://knowyourmeme.com/memes/no-cap-cap-capping",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.fox5ny.com/news/from-6-7-skibidi-gen-alpha-slang-decoded",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "As above ('that's cap' = lie).",
+        "needsReview": false
+      }
+    ],
+    "no_lie": [
+      {
+        "text": "no cap",
+        "standalone": false,
+        "weight": 0.9,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://knowyourmeme.com/memes/no-cap-cap-capping",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.dictionary.com/culture/slang/no-cap",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.fox5ny.com/news/from-6-7-skibidi-gen-alpha-slang-decoded",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2019): 'no lie'/'for real', Black slang; KYM traces it to 2017. Fox5 lists it among 2025 Gen Alpha terms, so it is shared. Iconic.",
+        "needsReview": false
+      }
+    ],
+    "resembles": [
+      {
+        "text": "it's giving",
+        "standalone": false,
+        "weight": 0.9,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/its-giving",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (June 2026): from Black/Latine ballroom culture, mainstream ~2020-21; it says both Gen Z and Gen Alpha use it, and older people say it too ('unc status' joke).",
+        "needsReview": false
+      },
+      {
+        "text": "its giving",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/its-giving",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Apostrophe-less spelling of the same phrase; keep as a match variant, not a separate output.",
+        "needsReview": false
+      }
+    ],
+    "embarrassing": [
+      {
+        "text": "cringe",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.the-independent.com/life-style/thumbs-up-emoji-gen-z-rude-b2583776.html",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Independent: Gen Z calls things 'cringe or cheugy'. Wikipedia glossary only has 'big yikes'/'cringeworthy'. Dictionary.com page 404'd.",
+        "needsReview": false
+      },
+      {
+        "text": "cheugy",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "fading",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.the-independent.com/life-style/thumbs-up-emoji-gen-z-rude-b2583776.html",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD: Gen Z word for outdated/trying-too-hard 'old Millennial energy'; RD adds Gen Z now finds the word itself cheugy, so it is fading.",
+        "needsReview": false
+      },
+      {
+        "text": "the ick",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/the-ick",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: Dictionary.com: sudden disgust toward a dating partner; from Ally McBeal (1999), popularised by Love Island, mainstream early 2020s. MEANING MISMATCH: repulsion, not embarrassment.",
+        "needsReview": true,
+        "conceptMismatch": true
+      }
+    ],
+    "friend": [
+      {
+        "text": "twin",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia: endearment for a close friend, sibling-like bond.",
+        "needsReview": false
+      },
+      {
+        "text": "bro",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia ('bruh/bru'): variant of 'bro' dating to the 1800s and again popular in 1967 and 2003. Generic, not Gen Z.",
+        "needsReview": false
+      }
+    ],
+    "okay": [
+      {
+        "text": "bet",
+        "standalone": true,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/bet",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2020): affirmation/agreement; RD and Wikipedia agree.",
+        "needsReview": false
+      },
+      {
+        "text": "say less",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/say_less",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang, humorous; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "humorous",
+          "slang"
+        ]
+      }
+    ],
+    "very": [
+      {
+        "text": "highkey",
+        "standalone": false,
+        "weight": 0.55,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/highkey",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia glossary has 'lowkenuinely' only. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Listed as an alternative form of \"high-key\", no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "drama": [
+      {
+        "text": "the tea",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/tea",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2019): gossip; from Black drag culture, spread via RuPaul's Drag Race. Wikipedia: 1990s drag-culture origin. Older than Gen Z but a core marker.",
+        "needsReview": false
+      },
+      {
+        "text": "lore",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/lore",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com 67 page uses 'pulled into the lore' in passing; no definition page. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching senses are labelled fandom and Internet slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Internet",
+          "fandom",
+          "slang"
+        ]
+      }
+    ],
+    "jealous": [
+      {
+        "text": "pressed",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/pressed",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: 'Pressed' = bothered/trying too hard, not jealous. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Labelled Internet slang, close to but not the same as the jealous concept; register confirmed but the generation is not established by labels.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": [
+          "Internet",
+          "slang"
+        ]
+      },
+      {
+        "text": "salty",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: Wikipedia: resentful, bitter or irritated; sailor origin (1800s). Bitterness fits 'jealous or bitter'.",
+        "needsReview": true,
+        "conceptMismatch": true
+      }
+    ],
+    "goodbye": [
+      {
+        "text": "gotta dip",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/dip",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Only the verb \"dip\" (colloquial) is attested; the phrase has no entry; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial"
+        ]
+      }
+    ],
+    "wow": [
+      {
+        "text": "sheesh",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wikipedia: praise when someone does something good; D'Angelo Russell 'ice in my veins' pose.",
+        "needsReview": false
+      }
+    ],
+    "main_character": [
+      {
+        "text": "main character",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/main-character-energy",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2023): emerged on social media in 2020; positive or mocking. RD: more often an insult.",
+        "needsReview": false
+      },
+      {
+        "text": "main character energy",
+        "standalone": false,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/main-character-energy",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "As above.",
+        "needsReview": false
+      }
+    ],
+    "nailed_it": [
+      {
+        "text": "slayed",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/slay",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: from Black/gay culture; RD traces it to drag culture and notes wide use across Gen Z and beyond. Natural form is 'slay'/'slayed'/'you slayed that'.",
+        "needsReview": false
+      },
+      {
+        "text": "ate that",
+        "standalone": false,
+        "weight": 0.85,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD: 'Ate (and left no crumbs)'; Wikipedia: 'ate'. The slot reads better as 'ate' or 'ate that' (e.g. 'she ate').",
+        "needsReview": false,
+        "proposedText": "ate"
+      }
+    ],
+    "mediocre": [
+      {
+        "text": "mid",
+        "standalone": false,
+        "weight": 0.75,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/mid",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2023): mediocre; popularised on TikTok; 2000s marijuana-grade origin. RD ranks it among the harshest Gen Z put-downs. New concept 'mediocre'.",
+        "needsReview": false
+      }
+    ],
+    "delusional": [
+      {
+        "text": "delulu",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "high",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/delulu",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.refog.com/blog/gen-alpha-slang-dictionary/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com (2023): shortening of 'delusional'; RD: playful; Refog: newly in Cambridge Dictionary. New concept 'delusional'.",
+        "needsReview": false
+      }
+    ],
+    "doomed": [
+      {
+        "text": "cooked",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Glossary_of_2020s_slang",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://www.refog.com/blog/gen-alpha-slang-dictionary/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD: 'you're done for'; Wikipedia: 'in trouble'; Refog groups it with Gen Alpha. Shared Z/Alpha. New concept 'doomed'.",
+        "needsReview": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "rizzetta-stone",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Rizzetta Stone, a rule-based generation translator: rewrite text between Boomer, Gen X, Millennial, Gen Z, and Gen Alpha styles.",
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "vitest run",
+    "e2e": "node scripts/e2e.mjs",
+    "samples": "node scripts/samples.mjs",
+    "review": "node scripts/review.mjs",
+    "verify-sources": "node scripts/verify-sources.mjs"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13"
+  },
+  "devDependencies": {
+    "happy-dom": "^21.0.3",
+    "playwright-core": "^1.64.1",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}

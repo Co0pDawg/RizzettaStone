@@ -1,0 +1,670 @@
+{
+  "id": "genx",
+  "label": "Gen X",
+  "years": "1965–1980",
+  "laughter": {
+    "trailing": {
+      "text": "",
+      "weight": 0.5,
+      "confidence": "low",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Generation_X",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Empty trailing laugh models deadpan restraint; consistent with the 'cynical, disaffected' Gen X stereotype (Wikipedia) but UNVERIFIED as a texting behaviour. In practice Gen X also writes 'lol'/'haha'. Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
+      "needsReview": true,
+      "labels": []
+    },
+    "mid": {
+      "text": "heh",
+      "weight": 0.5,
+      "confidence": "low",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wiktionary.org/api/rest_v1/page/definition/heh",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "Plausible dry chuckle; engine already detects 'heh'. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+      "needsReview": true,
+      "labels": []
+    },
+    "intense": {
+      "text": "ha. good one.",
+      "weight": 0.35,
+      "confidence": "low",
+      "status": "ironic",
+      "sources": [],
+      "notes": "Deadpan invention; no source attests it as a Gen X token. Keep as a comedic stereotype only. Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
+      "needsReview": true,
+      "labels": []
+    }
+  },
+  "style": {
+    "terse": true
+  },
+  "styleMarkers": {
+    "terse": {
+      "text": "terse 'k.' / 'whatever'",
+      "weight": 0.25,
+      "confidence": "low",
+      "status": "current",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Valleyspeak",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Generation_X",
+          "retrieved": "2026-10-19"
+        },
+        {
+          "url": "https://en.wiktionary.org/api/rest_v1/page/definition/k",
+          "retrieved": "2026-10-19"
+        }
+      ],
+      "notes": "'whatever' is well supported for 1980s-90s speech (Valleyspeak) and the Gen X cynic stereotype (Wikipedia). 'k.' as a Gen X marker is NOT supported: search snippets (RD, Inc., HuffPost, Fast Company; none fetchable) describe younger people sending 'k' and older people reading it as rude. Likely wrong-generation. Wiktionary re-vet: \"k\" (texting) and \"whatever\" (colloquial) are labelled, but this does not support Gen X use.",
+      "needsReview": true,
+      "labels": [
+        "colloquial",
+        "text messaging"
+      ]
+    }
+  },
+  "lexicon": {
+    "excellent": [
+      {
+        "text": "rad",
+        "standalone": false,
+        "weight": 0.75,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.refog.com/blog/gen-alpha-slang-dictionary/",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/rad",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Refog quotes a Syracuse linguist who lists rad among a series of in-group approval words (with cool, fly, hip, and lit); no generation named. Strong 80s association is UNVERIFIED. Wiktionary re-vet: Clipping of \"radical\" is labelled slang and dated; register confirmed but the generation is not established by labels; Wiktionary also confirms the dated status.",
+        "needsReview": false,
+        "labels": [
+          "dated",
+          "slang"
+        ]
+      },
+      {
+        "text": "wicked",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/wicked",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary confirms the 'excellent/very' sense. UNVERIFIED but likely New England regional, not Gen X-wide. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "gnarly",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.rd.com/list/gen-z-slang/",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "RD contrasts the boomers' groovy with Gen X's gnarly. Single source but explicit about the generation.",
+        "needsReview": false
+      },
+      {
+        "text": "all that",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/all-that",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: modern slang sense exploded in the 90s; it says the phrase now mostly turns up when an older millennial or Gen Xer gets nostalgic. Fits 'excellent'/'cool' (as in the catchphrase all that and a bag of chips).",
+        "needsReview": false
+      }
+    ],
+    "cool": [
+      {
+        "text": "phat",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/phat",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary glosses it as a general term of approval (excellent, cool). 90s hip-hop era association is UNVERIFIED (no page fetched dates it). Likely shared with early millennials. Wiktionary re-vet: The matching sense is labelled AAVE and the page is in English slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "AAVE"
+        ]
+      },
+      {
+        "text": "da bomb",
+        "standalone": false,
+        "weight": 0.65,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/da_bomb",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary fetch failed (rate-limited). Strong 90s association is the researcher's UNVERIFIED prior; ironic/nostalgic today. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "dope",
+        "standalone": false,
+        "weight": 0.45,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/dope",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: black slang/hip-hop term that went mainstream; quoted from Clueless (1995). Shared Gen X / millennial; lowish weight.",
+        "needsReview": false
+      }
+    ],
+    "honestly": [
+      {
+        "text": "straight up",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/straight_up",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled informal, slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "informal",
+          "slang"
+        ]
+      }
+    ],
+    "seriously": [
+      {
+        "text": "no joke",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/no_joke",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled; the informal label is on a different sense; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "agree": [
+      {
+        "text": "word",
+        "standalone": true,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/word",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "90s hip-hop 'word' = agreement. Also lives on in Gen Z ('bet'). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching senses are labelled AAVE slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "AAVE",
+          "slang"
+        ]
+      },
+      {
+        "text": "true dat",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "ironic",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/true_dat",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dated, mostly ironic now. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "lying": [
+      {
+        "text": "full of it",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/full_of_it",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic idiom. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Labelled idiomatic/euphemistic/pejorative, which are not slang/informal labels; stays low.",
+        "needsReview": true,
+        "labels": [
+          "euphemistic",
+          "idiomatic",
+          "pejorative"
+        ]
+      }
+    ],
+    "no_lie": [
+      {
+        "text": "swear to god",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/swear_to_God",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Only the capitalised form \"swear to God\" has an entry (informal); register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "informal"
+        ]
+      }
+    ],
+    "resembles": [
+      {
+        "text": "kinda like",
+        "standalone": false,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Generic hedge; no signal. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "embarrassing": [
+      {
+        "text": "lame",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/lame",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Wiktionary fetch failed. Generic playground insult across 80s-2000s. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled colloquial; the dated labels belong to a different sense; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "colloquial"
+        ]
+      },
+      {
+        "text": "bogus",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bill_%26_Ted%27s_Excellent_Adventure",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/bogus",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Concept mismatch: Bill & Ted's Excellent Adventure (1989) and Bogus Journey (1991) show 'bogus' as late-80s/early-90s catchphrase (title evidence only). MEANING MISMATCH: 'bogus' = fake/unfair/lousy, not cringe/embarrassing. Better fit would be 'lying'/'bad'. Wiktionary re-vet: One sense is labelled slang, a loose fit for the concept; register confirmed but the generation is not established by labels.",
+        "needsReview": true,
+        "conceptMismatch": true,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "friend": [
+      {
+        "text": "dude",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/dude",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Surf/skate-era marker, still used by all. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is labelled colloquial; the archaic label belongs to a different sense; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "Canada",
+          "US",
+          "colloquial"
+        ]
+      },
+      {
+        "text": "homeboy",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/homeboy",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled colloquial, AAVE; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "AAVE",
+          "colloquial"
+        ]
+      }
+    ],
+    "okay": [
+      {
+        "text": "k",
+        "standalone": true,
+        "weight": 0.8,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Product voice from the original brief: Gen X answers with a terse \"k.\" (the terse flourish adds the period). The research suggests \"k\" is younger usage that older readers find curt (see styleMarkers.terse), so it stays under review.",
+        "needsReview": true
+      }
+    ],
+    "very": [
+      {
+        "text": "totally",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Valleyspeak",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Valley_girl",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Valleyspeak: 'totally' meaning 'quite' or 'very'; 1980s-90s. Strong Gen X association.",
+        "needsReview": false
+      },
+      {
+        "text": "majorly",
+        "standalone": false,
+        "weight": 0.4,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/majorly",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled informal; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "informal"
+        ]
+      }
+    ],
+    "drama": [
+      {
+        "text": "a whole scene",
+        "standalone": false,
+        "weight": 0.25,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Generic ('make a scene'). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "jealous": [
+      {
+        "text": "player hatin",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/player_hater",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "'Player hater' is 90s; 'hatin' spelling unverified. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled AAVE, slang, derogatory; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "AAVE",
+          "derogatory",
+          "slang"
+        ]
+      }
+    ],
+    "goodbye": [
+      {
+        "text": "peace out",
+        "standalone": false,
+        "weight": 0.6,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/peace_out",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      },
+      {
+        "text": "later",
+        "standalone": true,
+        "weight": 0.5,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/later",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Matching sense is labelled slang; register confirmed but the generation is not established by labels.",
+        "needsReview": false,
+        "labels": [
+          "slang"
+        ]
+      }
+    ],
+    "wow": [
+      {
+        "text": "whoa",
+        "standalone": false,
+        "weight": 0.5,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/whoa",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic ('Bill & Ted' 'whoa' association UNVERIFIED). No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "main_character": [
+      {
+        "text": "a total rock star",
+        "standalone": false,
+        "weight": 0.3,
+        "confidence": "low",
+        "status": "current",
+        "sources": [],
+        "notes": "Generic praise. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "nailed_it": [
+      {
+        "text": "killed it",
+        "standalone": false,
+        "weight": 0.35,
+        "confidence": "low",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wiktionary.org/api/rest_v1/page/definition/killed_it",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Generic; Gen Z uses it too. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low.",
+        "needsReview": true,
+        "labels": []
+      }
+    ],
+    "disbelief": [
+      {
+        "text": "as if",
+        "standalone": true,
+        "weight": 0.7,
+        "confidence": "medium",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Valleyspeak",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Clueless_(film)",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Valleyspeak: 'as if' for disbelief; Clueless (1995) 'Uh! As if!' is the canonical use (Wikipedia). New concept 'disbelief'.",
+        "needsReview": false
+      }
+    ],
+    "overreacting": [
+      {
+        "text": "buggin'",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "high",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/buggin",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: popularised by 90s rap (Tribe, Biggie) and Clueless (1995) 'totally buggin'. Slightly positive now ('excited') among young people, hence 'dated'. New concept 'overreacting'.",
+        "needsReview": false
+      }
+    ],
+    "dismiss": [
+      {
+        "text": "whatever",
+        "standalone": false,
+        "weight": 0.8,
+        "confidence": "medium",
+        "status": "current",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Valleyspeak",
+            "retrieved": "2026-10-19"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Generation_X",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Valleyspeak page: 'whatever' or 'as if' express disbelief/dismissal (1980s-90s); Wikipedia Gen X page notes the 'slacker, cynical, disaffected' stereotype. Iconic for Gen X, but MEANING MISMATCH: 'whatever' = indifference/dismissal, not 'sounds good, will do'. Consider moving to a 'dismiss' concept. Merge: moved from \"okay\" to \"dismiss\" (researcher's proposed concept).",
+        "needsReview": true
+      },
+      {
+        "text": "talk to the hand",
+        "standalone": false,
+        "weight": 0.7,
+        "confidence": "high",
+        "status": "dated",
+        "sources": [
+          {
+            "url": "https://www.dictionary.com/culture/slang/talk-to-the-hand",
+            "retrieved": "2026-10-19"
+          }
+        ],
+        "notes": "Dictionary.com: started in the 1990s, popularised by Martin (1992-97); it calls the phrase uncommon today. New concept 'dismiss'.",
+        "needsReview": false
+      }
+    ]
+  }
+}
