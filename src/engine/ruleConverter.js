@@ -1,4 +1,4 @@
-import { CONCEPTS, DICTIONARIES, GENERATION_IDS, LAUGH_TOKENS, entryText, pickPrimary } from './dictionaries.js';
+import { CONCEPTS, DICTIONARIES, GENERATION_IDS, LAUGH_TOKENS, PLAIN_ID, entryText, pickPrimary } from './dictionaries.js';
 import {
   applyCase,
   isClauseEnd,
@@ -21,9 +21,6 @@ import {
  * @typedef {'trailing' | 'mid' | 'intense'} LaughClass
  * @typedef {{ start: number, end: number, text: string, from: string, kind: Change['kind'] }} Replacement
  */
-
-/** Pseudo-generation for concepts.json `plain` words in the decode table. */
-const PLAIN = '(plain)';
 
 // Word edges: no word character next to the match, and no hyphen or dot that
 // joins it to one ("mid-century", "lol-worthy", "lol.com" are single words).
@@ -127,6 +124,8 @@ export function createRuleConverter(options = {}) {
     for (const [concept, entries] of Object.entries(dictionaries[gen].lexicon)) {
       ownNorms[gen][concept] = new Set();
       primaries[gen][concept] = pickPrimary(entries).text;
+      // Plain words are decoded from concepts.json below.
+      if (gen === PLAIN_ID) continue;
       for (const entry of entries) {
         const stored = normalizeForMatch(entryText(entry));
         const norm = stored.toLowerCase();
@@ -145,14 +144,15 @@ export function createRuleConverter(options = {}) {
     }
   }
   // A concept's plain word decodes too, but only standalone ("okay!", "Seriously?"),
-  // so the plain fallback round-trips. Slang with the same spelling wins.
+  // so the plain fallback round-trips. Slang with the same spelling wins. When
+  // Plain English is the source, its words match anywhere (see findLexicon).
   for (const [concept, { plain }] of Object.entries(concepts)) {
     const stored = normalizeForMatch(plain);
     const norm = stored.toLowerCase();
     if (!norm) continue;
     const key = norm[0];
     if (!buckets.has(key)) buckets.set(key, []);
-    buckets.get(key).push({ norm, stored, concept, gen: PLAIN, standalone: true });
+    buckets.get(key).push({ norm, stored, concept, gen: PLAIN_ID, standalone: true });
   }
   for (const list of buckets.values()) list.sort((a, b) => b.norm.length - a.norm.length);
 
@@ -241,7 +241,8 @@ export function createRuleConverter(options = {}) {
 
   /**
    * Find slang: whole-word, case-insensitive, longest match first; ties go to
-   * the source generation, then generation order, then standalone plain words.
+   * the source generation, then generation order, then plain words. Plain
+   * words must stand alone unless Plain English is the source.
    * @param {string} text original text
    * @param {string} lower lower-cased, apostrophe-normalized text
    * @param {string} from source generation id
@@ -249,7 +250,7 @@ export function createRuleConverter(options = {}) {
    */
   function findLexicon(text, lower, from, laughs) {
     const edges = { starts: new Set(laughs.map((t) => t.start)), ends: new Set(laughs.map((t) => t.end)) };
-    const rank = (/** @type {string} */ gen) => (gen === from ? -1 : gen === PLAIN ? genIds.length : genIds.indexOf(gen));
+    const rank = (/** @type {string} */ gen) => (gen === from ? -1 : gen === PLAIN_ID ? genIds.length : genIds.indexOf(gen));
     const matches = [];
     let i = 0;
     while (i < lower.length) {
@@ -265,7 +266,8 @@ export function createRuleConverter(options = {}) {
         if (lower.slice(i, end) !== c.norm) continue;
         if (isWordChar(c.norm[c.norm.length - 1]) && joinsWordAfter(lower, end)) continue;
         if (laughs.some((t) => t.start < end && t.end > i)) continue;
-        if (c.standalone && !isStandalone(text, i, end, edges)) continue;
+        const anywhere = c.gen === PLAIN_ID && from === PLAIN_ID;
+        if (c.standalone && !anywhere && !isStandalone(text, i, end, edges)) continue;
         if (!best || rank(c.gen) < rank(best.gen)) best = c;
       }
       if (best) {

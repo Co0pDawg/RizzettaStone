@@ -1,7 +1,7 @@
 // Print a Markdown table of sample conversions: each input to every other
-// generation. Usage: npm run samples [-- output.md]
+// generation, Plain English included. Usage: npm run samples [-- output.md]
 import { readFile, writeFile } from 'node:fs/promises';
-import { createConverter, DICTIONARIES, GENERATION_IDS } from '../src/engine/index.js';
+import { createConverter, DICTIONARIES, LANGUAGE_IDS } from '../src/engine/index.js';
 import { SEED_SAMPLES } from '../src/samples.js';
 import { resolveSiteName } from '../src/config/site.js';
 
@@ -24,7 +24,7 @@ const lines = [
 ];
 for (const { from, text } of [...SEED_SAMPLES, ...MIXED]) {
   lines.push(`## From ${DICTIONARIES[from].label}`, '', `> ${cell(text)}`, '', '| To | Output | Changes |', '|---|---|---|');
-  for (const to of GENERATION_IDS.filter((g) => g !== from)) {
+  for (const to of LANGUAGE_IDS.filter((g) => g !== from)) {
     const result = await converter.convert(text, { from, to });
     lines.push(`| ${DICTIONARIES[to].label} | ${cell(result.text)} | ${result.changes.length} |`);
   }

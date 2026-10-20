@@ -19,12 +19,15 @@
 // - Entries the research does not cover: weight 0.5, low, no sources, review.
 // - Invariant: confidence "low" => needsReview true.
 // - Laughter outputs, "...", "Love, Mom", and Gen X terse keep their text
-//   (product voice); only their metadata is imported.
+//   (product voice); only their metadata is imported. A laughter output that
+//   names an emoji ("skull emoji") is replaced by the emoji itself
+//   (LAUGHTER_TEXT_FIXES in scripts/apply-research2.mjs).
 // Re-running on already-merged files gives byte-identical output. It resets
 // research-covered metadata, so re-run only to re-import the research.
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { LAUGHTER_TEXT_FIXES } from './apply-research2.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dictDir = path.join(root, 'src', 'dictionaries');
@@ -173,6 +176,15 @@ const EXTRA_TOKENS = [
     word: true,
     intense: false,
     standalone: true,
+  },
+  {
+    text: 'skull emoji',
+    primaryGeneration: 'genalpha',
+    pattern: 'skull emoji',
+    word: true,
+    intense: false,
+    standalone: false,
+    extraNote: 'People type the words for 💀, so they still read as a laugh. No output ever writes them (LAUGHTER_TEXT_FIXES).',
   },
 ];
 
@@ -340,10 +352,15 @@ async function main() {
     const laughter = {};
     for (const slot of SLOTS) {
       const current = dict.laughter[slot];
-      const text = textOf(current);
+      const fix = LAUGHTER_TEXT_FIXES[`${gen}:${slot}`];
+      // Product voice: laughter output text never changes here, except that an
+      // emoji's name is written as the emoji.
+      const text = fix && textOf(current) === fix.from ? fix.to : textOf(current);
       const re = r.laughter?.[slot];
-      // Product voice: laughter output text never changes here.
-      const entry = re ? { text, ...meta(re, { notes: researchNotes(`${gen}:laughter.${slot}`, re.notes) }) } : { text, ...DEFAULT_META };
+      const fixNote = fix && re?.text === fix.from ? ` Merge: written as ${fix.to}, never the words "${fix.from}".` : '';
+      const entry = re
+        ? { text, ...meta(re, { notes: `${researchNotes(`${gen}:laughter.${slot}`, re.notes)}${fixNote}` }) }
+        : { text, ...DEFAULT_META };
       if (re?.conceptMismatch) entry.conceptMismatch = true;
       if (re?.proposedText) entry.proposedText = re.proposedText;
       laughter[slot] = entry;

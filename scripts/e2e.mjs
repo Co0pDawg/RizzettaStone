@@ -192,6 +192,28 @@ async function main() {
     console.log(`e2e: after swap = ${back}`);
     assert(!/💀|😭/u.test(back), 'swap re-converts the Gen Z text to Millennial');
 
+    // Plain English is the last of six options in both selects, and it
+    // decodes Gen Z slang and laughs into plain words.
+    for (const id of ['from-select', 'to-select']) {
+      const labels = await page.getByTestId(id).locator('option').allTextContents();
+      assert(labels.length === 6 && labels.at(-1) === 'Plain English', `${id} lists Plain English last of 6 (got ${labels.join(', ')})`);
+    }
+    const genzInput = "no bc it's giving main character, real 💀";
+    await page.getByTestId('from-select').selectOption('genz');
+    await page.getByTestId('to-select').selectOption('plain');
+    await page.getByTestId('input').fill(genzInput);
+    await page.waitForFunction(
+      (s) => {
+        const text = document.querySelector('[data-testid="output"]')?.textContent ?? '';
+        return text !== '' && text !== s;
+      },
+      genzInput,
+    );
+    const plain = (await output.textContent()) ?? '';
+    console.log(`e2e: Gen Z -> Plain English = ${plain}`);
+    assert(/\bthe star of the show\b/.test(plain), 'Plain English output contains the decoded plain word');
+    assert(!/💀|😭/u.test(plain), 'Plain English output has no 💀 or 😭');
+
     // Example cycles the input through different seed samples.
     const seen = new Set();
     for (let i = 0; i < 3; i += 1) {

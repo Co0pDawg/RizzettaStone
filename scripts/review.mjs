@@ -6,7 +6,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { CONFIDENCES, DICTIONARIES, GENERATION_IDS, LAUGH_TOKENS } from '../src/engine/dictionaries.js';
+import { CONFIDENCES, DICTIONARIES, GENERATION_IDS, LAUGH_TOKENS, PLAIN_ID } from '../src/engine/dictionaries.js';
 
 /**
  * @typedef {{
@@ -65,6 +65,8 @@ function row(kind, generation, concept, e) {
 
 /**
  * Every reviewable entry: lexicon, laughter outputs, laugh tokens, style markers.
+ * Plain English is left out: it is built from concepts.json and has no
+ * research signal to review.
  * @param {Record<string, any>} [dictionaries]
  * @param {any[]} [laughTokens]
  * @returns {ReviewRow[]}
@@ -73,6 +75,7 @@ export function collectRows(dictionaries = DICTIONARIES, laughTokens = LAUGH_TOK
   /** @type {ReviewRow[]} */
   const rows = [];
   for (const [gen, dict] of Object.entries(dictionaries)) {
+    if (gen === PLAIN_ID) continue;
     for (const [concept, entries] of Object.entries(dict.lexicon)) {
       for (const e of /** @type {any[]} */ (entries)) rows.push(row('lexicon', gen, concept, e));
     }

@@ -4,6 +4,7 @@ import {
   CONFIDENCES,
   DICTIONARIES,
   GENERATION_IDS,
+  LANGUAGE_IDS,
   LAUGH_TOKENS,
   STATUSES,
   validateAll,
@@ -50,7 +51,7 @@ const laugh = (text) => {
 describe('validateDictionary', () => {
   it('accepts every shipped dictionary and the laugh tokens', () => {
     expect(validateAll()).toEqual([]);
-    for (const id of GENERATION_IDS) expect(validateDictionary(DICTIONARIES[id], CONCEPTS)).toEqual([]);
+    for (const id of LANGUAGE_IDS) expect(validateDictionary(DICTIONARIES[id], CONCEPTS)).toEqual([]);
     expect(validateLaughTokens(LAUGH_TOKENS)).toEqual([]);
   });
 
@@ -90,6 +91,7 @@ describe('validateDictionary', () => {
     const broken = {
       id: 'broken',
       label: '',
+      years: ' ',
       laughter: { trailing: laugh('lol'), mid: 'haha' },
       style: { sparkle: true },
       lexicon: {
@@ -163,6 +165,46 @@ describe('concept-mismatch entries', () => {
     for (const e of mismatched) {
       expect(e.weight).toBeLessThanOrEqual(0.3);
       expect(e.needsReview).toBe(true);
+    }
+  });
+});
+
+describe('Plain English', () => {
+  it('is built from every concept plain word with baseline metadata and no years', () => {
+    const plain = DICTIONARIES.plain;
+    expect(plain.label).toBe('Plain English');
+    expect(plain.years).toBeUndefined();
+    expect(plain.signoff).toBeUndefined();
+    expect(plain.style).toBeUndefined();
+    expect(Object.keys(plain.lexicon)).toEqual(Object.keys(CONCEPTS));
+    for (const [id, [e]] of Object.entries(plain.lexicon)) {
+      expect(e).toEqual({
+        text: CONCEPTS[id].plain,
+        standalone: true,
+        weight: 1,
+        confidence: 'high',
+        status: 'current',
+        sources: [],
+        notes: 'plain English baseline',
+        needsReview: false,
+      });
+    }
+    expect(Object.values(plain.laughter).map((e) => e.text)).toEqual(['(laughing)', 'haha', '(laughing hard)']);
+  });
+
+  it('allows a missing years range, and every generation ships one', () => {
+    const { years, ...noYears } = DICTIONARIES.genz;
+    expect(validateDictionary(noYears, CONCEPTS)).toEqual([]);
+    expect(GENERATION_IDS.every((id) => typeof DICTIONARIES[id].years === 'string')).toBe(true);
+  });
+});
+
+describe('output slots', () => {
+  it('never spell an emoji name: no laughter output or lexicon text contains "emoji"', () => {
+    for (const id of LANGUAGE_IDS) {
+      const dict = DICTIONARIES[id];
+      const outputs = [...Object.values(dict.laughter), ...Object.values(dict.lexicon).flat()];
+      for (const e of outputs) expect(/\bemoji\b/i.test(e.text), `${id} "${e.text}"`).toBe(false);
     }
   });
 });

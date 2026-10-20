@@ -1,5 +1,5 @@
 /**
- * Seed messages, one per source generation. Used by the Example button,
+ * Seed messages, one per source (each generation, then Plain English). Used by the Example button,
  * the tests, and scripts/samples.mjs.
  * @type {{ from: string, text: string }[]}
  */
@@ -9,6 +9,7 @@ export const SEED_SAMPLES = [
   { from: 'boomer', text: 'My goodness, what a wonderful party. Ha ha! Your uncle was telling stories again, I kid you not. Call me, pal.' },
   { from: 'genx', text: 'Whoa, that concert was rad, no joke! My dude Steve was full of it as usual heh. Whatever. Peace out.' },
   { from: 'genalpha', text: 'ayo gng that edit was goated 💀 but his aura farming is so ohio fr fr' },
+  { from: 'plain', text: 'Honestly, that party was excellent haha. My friend was seriously embarrassing, no lie. Okay, goodbye!' },
 ];
 
 /** First seed sample for a generation. */

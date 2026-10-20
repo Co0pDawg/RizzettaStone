@@ -33,4 +33,4 @@ export function createConverter(options = {}) {
   throw new Error(`Unknown converter mode "${mode}"`);
 }
 
-export { GENERATION_IDS, DICTIONARIES, CONCEPTS, validateDictionary, validateAll } from './dictionaries.js';
+export { GENERATION_IDS, LANGUAGE_IDS, PLAIN_ID, DICTIONARIES, CONCEPTS, validateDictionary, validateAll } from './dictionaries.js';

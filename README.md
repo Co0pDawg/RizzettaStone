@@ -2,7 +2,7 @@
 
 *Fluent in 💀, 😂, and 'Love, Mom.'*
 
-A small, offline web toy that rewrites a text message from one generation's style into another's — Boomer, Gen X, Millennial, Gen Z, and Gen Alpha — and exports a before/after PNG share card. It is rule-based: editable JSON dictionaries, no AI, no network calls.
+A small, offline web toy that rewrites a text message from one generation's style into another's — Boomer, Gen X, Millennial, Gen Z, and Gen Alpha, plus Plain English — and exports a before/after PNG share card. It is rule-based: editable JSON dictionaries, no AI, no network calls.
 
 ```
 lol what happened, my bestie is on fleek     (Millennial)
@@ -26,7 +26,7 @@ npm start        # → http://127.0.0.1:5173
 | `npm test` | Unit tests (vitest; the DOM tests use happy-dom) |
 | `npm run build` | Production build into `dist/` |
 | `npm run e2e` | Builds, starts `vite preview` on a free port at the deploy base, and drives the UI in headless system Chrome (`/usr/bin/google-chrome`, via `playwright-core`). It checks the site name, tagline, parody disclaimer, asset base path, ad-slot DOM order, and the privacy page; drives Copy (reads the clipboard back), Swap, and Example; checks the card title and watermark; downloads the share card, checks the PNG signature and IHDR size, and asserts that no request leaves localhost. It writes `artifacts/share-card.png` and `artifacts/app.png`. No Playwright browser download is needed. |
-| `npm run samples` | Prints a Markdown table converting sample messages to every generation. `npm run samples -- out.md` writes it to a file. |
+| `npm run samples` | Prints a Markdown table converting sample messages (a Plain English one included) to every generation and to Plain English. `npm run samples -- out.md` writes it to a file. |
 | `npm run review` | Regenerates `data/REVIEW.md` and `data/review.csv`, the dictionary review artifact. |
 | `npm run verify-sources` | Re-checks every entry's Wiktionary labels and writes a report (see [Data provenance & licensing](#data-provenance--licensing)). Makes network requests; not part of `npm test`. |
 | `node scripts/merge-research.mjs <research.json>` | Re-imports a dictionary research file (see [Dictionary data and research](#dictionary-data-and-research)). |
@@ -46,9 +46,19 @@ Conversion is **decode → canonical concepts → encode**, not pairwise tables.
 
 Converting a generation to itself returns the input unchanged. Output is deterministic.
 
+### Plain English
+
+**Plain English** (id `plain`) is the sixth option, listed last in both selects, with no birth-year range.
+
+- **As a target**, slang from any generation becomes the concept's `plain` word. Laughs become words: trailing `(laughing)`, mid `haha`, intense `(laughing hard)`, so 💀 😭 😂 🤣 decode too. There is no style flourish and no signoff.
+- **As a source**, a concept's plain word ("excellent", "seriously", "okay", "friend") converts anywhere in the sentence, not only when it stands alone. Slang in the same text still decodes. For every other source, plain words stay standalone-only (step 2), so "a friend of mine" is not rewritten.
+- Plain English to Plain English returns the input unchanged.
+
+It is a **synthetic generation**: `buildPlainDictionary(concepts)` in `src/engine/dictionaries.js` builds it at load time from `concepts.json`, and there is no `plain.json`. The plain words already live in `concepts.json`, and the engine already decodes them, so a separate file would duplicate them and could drift when a concept is added. Building it also keeps it out of the research scripts (`merge-research`, `apply-research2`, `verify-sources`), which only rewrite the five generation files. Each entry carries the full metadata schema (weight 1, `high`, `current`, no sources, notes `plain English baseline`, `needsReview: false`) and passes `validateDictionary`. `years` is optional in `validateDictionary`, and `validateAll` requires it for the five generations. `npm run review` leaves Plain English out because it has no research signal to review.
+
 ### Laughter classification
 
-Laughter is its own pipeline. The tokens it detects live in `src/dictionaries/laughTokens.json`, each with a regex `pattern` plus review metadata: `lol`/`lolol`/`LOOOL`, `lmao`, `lmfao`, `rofl`, `haha`/`hahaha`/`ha ha`, `hehe`/`heh`, 😂 🤣 💀 😭 👍, and `Ha ha!`. Every generation's own laughter outputs (`skull emoji`, `💀💀💀 I'm crine`, …) are also recognized, so converted text decodes again. Tokens marked `standalone` count only when they form their own clause: `HELP`/`HELPPP`, `I'm dead`/`im dead`/`ded`, `dying`/`I'm dying`, `I'm crying`, `I'm crine`, `I'm weak`, and `I'm deceased`. So "please help me move", "dying plants", "the plant is dying.", and "a dead battery" are untouched. A token's `word: true` guards both edges against in-word matches; emoji tokens use `word: false`.
+Laughter is its own pipeline. The tokens it detects live in `src/dictionaries/laughTokens.json`, each with a regex `pattern` plus review metadata: `lol`/`lolol`/`LOOOL`, `lmao`, `lmfao`, `rofl`, `haha`/`hahaha`/`ha ha`, `hehe`/`heh`, 😂 🤣 💀 😭 👍, and `Ha ha!`. Every generation's own laughter outputs (`Ha ha!`, `💀💀💀 I'm crine`, `(laughing)`, …) are also recognized, so converted text decodes again. The typed words `skull emoji` also count as a laugh, because people do type them, but no output ever writes an emoji's name: Gen Alpha's mid laugh is `💀`. Tokens marked `standalone` count only when they form their own clause: `HELP`/`HELPPP`, `I'm dead`/`im dead`/`ded`, `dying`/`I'm dying`, `I'm crying`, `I'm crine`, `I'm weak`, and `I'm deceased`. So "please help me move", "dying plants", "the plant is dying.", and "a dead battery" are untouched. A token's `word: true` guards both edges against in-word matches; emoji tokens use `word: false`.
 
 Adjacent tokens separated only by spaces collapse into one laugh event, which is classified:
 
@@ -105,6 +115,8 @@ The metadata came from a researched review dated 2026-10-19. Every cited URL was
 - The product voice overrides the research for Boomer 👍, the Boomer "..." and "Love, Mom", the Gen X terse style, Millennial 😂, and Gen Z 💀/😭. Their outputs are kept and the research metadata shows the evidence gap.
 
 `scripts/merge-research.mjs` is the re-runnable import of that research. `keep`/`modify` apply metadata; `add` inserts entries and new concepts. `remove` deletes only `medium`/`high`-confidence entries; `low` ones are kept with `needsReview` and the reason in `notes`. A concept mismatch with a proposed concept moves the entry; without one, the entry stays under its concept with `needsReview` and a `Concept mismatch:` note and its weight capped at 0.3, so it still decodes but rarely wins encoding (a mismatch is not a removal). Entries the research does not cover get weight 0.5, `low`, and `needsReview`. The script also re-applies our paraphrases of notes that quoted a source (`NOTE_PARAPHRASES`), standalone overrides (`cap`), and product-voice entries the research lacks (Gen X `k`). Re-running it on merged files changes nothing, but it does reset research-covered metadata (and drops stored `labels`), so run it only to re-import research, and follow it with `apply-research2.mjs`.
+
+The research named Gen Alpha's mid laugh `skull emoji`. `LAUGHTER_TEXT_FIXES` in `scripts/apply-research2.mjs`, which both scripts use, writes it as `💀`, the same as the trailing slot (one skull reads as a laugh in either position), so a re-import cannot bring the name back. Both scripts also add the `skull emoji` input token.
 
 `scripts/apply-research2.mjs` applies the second research pass, a Wiktionary re-vet of every low-confidence entry. Each update is matched by generation, kind, concept or slot, and text. It sets `confidence`/`status`/`weight`/`needsReview`, appends new sources (deduped by URL) and the researcher's note, and stores the usage `labels` (normalized like `verify-sources`). Categories and Urban Dictionary signals are not stored. `needsReview` stays true for low confidence and for entries an earlier decision flagged (concept mismatch, or a research "remove" kept for review). An update that matches no entry is an error: nothing is written. Re-running it changes nothing. The review artifact has a `labels` column.
 
@@ -208,7 +220,7 @@ src/ads.js, src/consent.js               config-driven ad slot + consent stub
 src/engine/index.js                      createConverter({ mode }) + Converter typedefs
 src/engine/ruleConverter.js              laugh pipeline, decode/encode, style
 src/engine/tokenize.js                   boundary, clause, and case helpers
-src/engine/dictionaries.js               loads + validates the JSON, weight-based pickPrimary
+src/engine/dictionaries.js               loads + validates the JSON, builds Plain English, weight-based pickPrimary
 src/engine/llmConverter.js               LLM-mode stub
 src/samples.js                           seed messages (Example button, tests, samples)
 src/shareCard.js                         buildShareCard (pure DOM) + html-to-image export
@@ -238,7 +250,7 @@ test/                                    vitest suites
 - Word-for-word substitution: no grammar repair, so "a wonderful party" can become "a on fleek party".
 - Literal senses: common words that double as slang are decoded everywhere ("fire", "lame", "drama", "super"), so "the house is on fire" becomes "the house is on outta sight". Rules cannot tell senses apart; mark such entries `standalone` if that bothers you. `cap` already is standalone-only, so "I lost my cap" stays put, but so does "that's cap" (only a standalone "cap" or "cap." means a lie).
 - Concept-mismatch entries (`conceptMismatch: true`, e.g. Gen Z "hits different" under `cool`) stay selectable by weight, so some outputs read oddly ("this brunch is hits different") until their weights are reviewed.
-- A standalone plain word is decoded, so "Seriously?" or "Cool." alone gets rewritten into the target's slang.
+- A standalone plain word is decoded, so "Seriously?" or "Cool." alone gets rewritten into the target's slang. From Plain English, every plain word is rewritten, including literal senses ("the food was okay").
 - Only a target's highest-weight expression survives a round trip. Other expressions come back as that one ("no bc" → Millennial → "frfr").
 - Many Boomer, Gen X, and Millennial weights rest on no fetched source (`needsReview`), so their chosen expressions are provisional until reviewed.
 - Boomer's `👍` is treated as a laugh when decoding, because it is Boomer's trailing laugh.

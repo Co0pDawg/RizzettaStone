@@ -1,4 +1,4 @@
-import { createConverter, DICTIONARIES, GENERATION_IDS } from './engine/index.js';
+import { createConverter, DICTIONARIES, LANGUAGE_IDS } from './engine/index.js';
 import { SEED_SAMPLES } from './samples.js';
 import { downloadShareCard } from './shareCard.js';
 import siteConfig from './config/site.json' with { type: 'json' };
@@ -15,9 +15,9 @@ const changesEl = $('changes');
 const statusEl = $('status');
 
 for (const select of [fromSelect, toSelect]) {
-  for (const id of GENERATION_IDS) {
+  for (const id of LANGUAGE_IDS) {
     const { label, years } = DICTIONARIES[id];
-    select.append(new Option(`${label} (${years})`, id));
+    select.append(new Option(years ? `${label} (${years})` : label, id));
   }
 }
 fromSelect.value = 'millennial';
@@ -63,7 +63,7 @@ $('example').addEventListener('click', () => {
   input.value = sample.text;
   fromSelect.value = sample.from;
   if (toSelect.value === sample.from) {
-    toSelect.value = GENERATION_IDS.find((id) => id !== sample.from) ?? 'genz';
+    toSelect.value = LANGUAGE_IDS.find((id) => id !== sample.from) ?? 'genz';
   }
   render();
 });

@@ -385,5 +385,19 @@
     "sources": [],
     "notes": "not covered by research",
     "needsReview": true
+  },
+  {
+    "text": "skull emoji",
+    "primaryGeneration": "genalpha",
+    "pattern": "skull emoji",
+    "word": true,
+    "standalone": false,
+    "intense": false,
+    "weight": 0.5,
+    "confidence": "low",
+    "status": "current",
+    "sources": [],
+    "notes": "not covered by research. People type the words for 💀, so they still read as a laugh. No output ever writes them (LAUGHTER_TEXT_FIXES).",
+    "needsReview": true
   }
 ]

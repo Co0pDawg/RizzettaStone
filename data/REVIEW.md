@@ -1,6 +1,6 @@
 # Dictionary review
 
-Generated 2026-10-19 by `npm run review` (scripts/review.mjs). 208 entries, 90 need review.
+Generated 2026-10-19 by `npm run review` (scripts/review.mjs). 209 entries, 91 need review.
 
 To edit: change the JSON in `src/dictionaries/` (generation files and `laughTokens.json`), then re-run `npm run review`. Rows are sorted needsReview first, then confidence low → high, then weight ascending.
 
@@ -14,7 +14,7 @@ Wiktionary re-vet (research pass 2): low-confidence entries were re-checked agai
 | genx | 13 | 22 | 2 | 15 | 37 |
 | millennial | 16 | 24 | 1 | 20 | 41 |
 | genz | 8 | 21 | 21 | 12 | 50 |
-| genalpha | 6 | 20 | 9 | 12 | 35 |
+| genalpha | 7 | 20 | 9 | 13 | 36 |
 | shared | 2 | 0 | 0 | 2 | 2 |
 
 | generation | kind | concept | text | weight | confidence | status | needsReview | labels | sources | notes |
@@ -37,7 +37,7 @@ Wiktionary re-vet (research pass 2): low-confidence entries were re-checked agai
 | genx | style | terse | terse 'k.' / 'whatever' | 0.25 | low | current | **yes** | colloquial, text messaging | [en.wikipedia.org](https://en.wikipedia.org/wiki/Valleyspeak) [en.wikipedia.org](https://en.wikipedia.org/wiki/Generation_X) [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/k) | 'whatever' is well supported for 1980s-90s speech (Valleyspeak) and the Gen X cynic stereotype (Wikipedia). 'k.' as a Gen X marker is NOT supported: search snippets (RD, Inc., HuffPost, Fast Company; none fetchable) describe younger people sending 'k' and older people reading it as rude. Likely wrong-generation. Wiktionary re-vet: "k" (texting) and "whatever" (colloquial) are labelled, but this does not support Gen X use. |
 | millennial | lexicon | nailed_it | nailed it | 0.25 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/nailed_it) | Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low. |
 | genz | lexicon | honestly | not gonna lie | 0.25 | low | current | **yes** |  |  | Expanded form is generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: No English Wiktionary page (REST 404) for this term, so it stays low. |
-| genalpha | laughter | mid | skull emoji | 0.25 | low | ironic | **yes** |  |  | Writing the words 'skull emoji' instead of sending one is not attested in any fetched source. Evidence-backed alternative: 'ded' (Wikipedia: 'dead/ded' = so funny it kills you). Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword. |
+| genalpha | laughter | mid | 💀 | 0.25 | low | ironic | **yes** |  |  | Writing the words 'skull emoji' instead of sending one is not attested in any fetched source. Evidence-backed alternative: 'ded' (Wikipedia: 'dead/ded' = so funny it kills you). Merge: written as 💀, never the words "skull emoji". Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword. |
 | boomer | lexicon | agree | indeed | 0.3 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/indeed) | Formal/British-leaning, generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low. |
 | boomer | lexicon | excellent | terrific | 0.3 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/terrific) | Generic. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: An English page exists but the matching sense has no register label; stays low. |
 | boomer | lexicon | excellent | wonderful | 0.3 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/wonderful) | Generic polite English, not a boomer marker. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: The matching sense is unlabeled (standard English); stays low. |
@@ -87,6 +87,7 @@ Wiktionary re-vet (research pass 2): low-confidence entries were re-checked agai
 | genz | lexicon | seriously | no bc | 0.5 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/bc) | No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: "bc" (because) is labelled text messaging, but the phrase and a matching sense are absent; stays low. |
 | genz | laughToken | standalone | dying / i'm dying | 0.5 | low | current | **yes** |  |  | not covered by research. Added by orchestrator decision B1a; the research notes for "i'm dead / ded" cite Dictionary.com for "I'm dying". |
 | genz | laughToken | standalone | i'm deceased | 0.5 | low | current | **yes** |  |  | not covered by research |
+| genalpha | laughToken | any | skull emoji | 0.5 | low | current | **yes** |  |  | not covered by research. People type the words for 💀, so they still read as a laugh. No output ever writes them (LAUGHTER_TEXT_FIXES). |
 | genz | lexicon | very | highkey | 0.55 | low | current | **yes** |  | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/highkey) | Wikipedia glossary has 'lowkenuinely' only. No source fetched for this entry; generational association is the researcher's UNVERIFIED prior. Wiktionary re-vet: Listed as an alternative form of "high-key", no register label; stays low. |
 | boomer | lexicon | agree | right on | 0.6 | low | dated | **yes** | US, dated, idiomatic | [en.wiktionary.org](https://en.wiktionary.org/api/rest_v1/page/definition/right_on) | 1960s-70s counterculture affirmation (UNVERIFIED: no page fetched that attests it). Wiktionary re-vet: One enthusiasm sense is labelled dated and the agreement sense is unlabeled; stays low; Wiktionary also confirms the dated status. |
 | genalpha | lexicon | goodbye | bye chat | 0.6 | low | current | **yes** |  | [en.wikipedia.org](https://en.wikipedia.org/wiki/Glossary_of_2020s_slang) | Streamer-culture address ('chat'); Wikipedia's gng entry mentions gamer parting phrases. 'Bye chat' itself not attested on a fetched page. Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword. |

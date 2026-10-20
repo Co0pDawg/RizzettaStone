@@ -22,6 +22,16 @@ import { normalizeLabels } from './verify-sources.mjs';
 // Same cap as scripts/merge-research.mjs (a concept-mismatch entry decodes but rarely wins encoding).
 const MISMATCH_WEIGHT_CAP = 0.3;
 
+/**
+ * Laughter outputs whose research text was an emoji's name. An output slot
+ * must hold the emoji itself, never its name, so the research text `from` is
+ * written as `to`. Keyed by `<gen>:<slot>`; scripts/merge-research.mjs applies it.
+ * @type {Record<string, { from: string, to: string }>}
+ */
+export const LAUGHTER_TEXT_FIXES = {
+  'genalpha:mid': { from: 'skull emoji', to: '💀' },
+};
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dictDir = path.join(root, 'src', 'dictionaries');
 const GENERATIONS = ['boomer', 'genx', 'millennial', 'genz', 'genalpha'];
@@ -64,7 +74,9 @@ function locate(u, dicts, tokens) {
     }
     case 'laughter': {
       const e = dict?.laughter?.[u.slot];
-      return e && e.text === u.text ? e : null;
+      const fix = LAUGHTER_TEXT_FIXES[`${u.generation}:${u.slot}`];
+      const text = fix && u.text === fix.from ? fix.to : u.text;
+      return e && e.text === text ? e : null;
     }
     case 'styleMarker':
       return Object.values(dict?.styleMarkers ?? {}).find((m) => m.text === u.text) ?? null;

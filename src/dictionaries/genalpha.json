@@ -22,12 +22,12 @@
       "needsReview": false
     },
     "mid": {
-      "text": "skull emoji",
+      "text": "💀",
       "weight": 0.25,
       "confidence": "low",
       "status": "ironic",
       "sources": [],
-      "notes": "Writing the words 'skull emoji' instead of sending one is not attested in any fetched source. Evidence-backed alternative: 'ded' (Wikipedia: 'dead/ded' = so funny it kills you). Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
+      "notes": "Writing the words 'skull emoji' instead of sending one is not attested in any fetched source. Evidence-backed alternative: 'ded' (Wikipedia: 'dead/ded' = so funny it kills you). Merge: written as 💀, never the words \"skull emoji\". Wiktionary re-vet: Not looked up: emoji, empty string, or free-form phrase with no dictionary headword.",
       "needsReview": true,
       "proposedText": "ded",
       "labels": []

@@ -39,7 +39,7 @@ import genalpha from '../dictionaries/genalpha.json' with { type: 'json' };
  * @typedef {{
  *   id: string,
  *   label: string,
- *   years: string,
+ *   years?: string,
  *   laughter: Laughter,
  *   lexicon: Record<string, LexiconEntry[]>,
  *   style?: StyleFlags,
@@ -51,14 +51,60 @@ import genalpha from '../dictionaries/genalpha.json' with { type: 'json' };
 /** Generation ids in display order (oldest first). */
 export const GENERATION_IDS = ['boomer', 'genx', 'millennial', 'genz', 'genalpha'];
 
+/** Id of the synthetic Plain English generation (see buildPlainDictionary). */
+export const PLAIN_ID = 'plain';
+
+/** Every selectable source/target id in display order: the generations, then Plain English. */
+export const LANGUAGE_IDS = [...GENERATION_IDS, PLAIN_ID];
+
 /** @type {Concepts} */
 export const CONCEPTS = concepts;
 
 /** @type {LaughToken[]} */
 export const LAUGH_TOKENS = /** @type {LaughToken[]} */ (laughTokens);
 
+const PLAIN_META = {
+  weight: 1,
+  confidence: /** @type {Confidence} */ ('high'),
+  status: /** @type {Status} */ ('current'),
+  sources: [],
+  notes: 'plain English baseline',
+  needsReview: false,
+};
+
+/**
+ * Plain English, built from each concept's `plain` word rather than stored in
+ * its own file, so it can never drift from concepts.json. Laughter becomes
+ * words; there is no style flourish or signoff. Its lexicon entries are
+ * `standalone`: from another generation a plain word decodes only on its own,
+ * but the engine matches them anywhere when Plain English is the source.
+ * @param {Concepts} conceptList
+ * @returns {GenerationDictionary}
+ */
+export function buildPlainDictionary(conceptList) {
+  return {
+    id: PLAIN_ID,
+    label: 'Plain English',
+    laughter: {
+      trailing: { text: '(laughing)', ...PLAIN_META, sources: [] },
+      mid: { text: 'haha', ...PLAIN_META, sources: [] },
+      intense: { text: '(laughing hard)', ...PLAIN_META, sources: [] },
+    },
+    lexicon: Object.fromEntries(
+      Object.entries(conceptList).map(([id, { plain }]) => [id, [{ text: plain, standalone: true, ...PLAIN_META, sources: [] }]]),
+    ),
+  };
+}
+
 /** @type {Record<string, GenerationDictionary>} */
-export const DICTIONARIES = /** @type {any} */ ({ boomer, genx, millennial, genz, genalpha });
+export const DICTIONARIES = /** @type {any} */ ({
+  boomer,
+  genx,
+  millennial,
+  genz,
+  genalpha,
+  [PLAIN_ID]: buildPlainDictionary(concepts),
+});
 
 export const CONFIDENCES = ['high', 'medium', 'low'];
 export const STATUSES = ['current', 'fading', 'dated', 'ironic'];
@@ -169,6 +215,8 @@ export function validateDictionary(dict, conceptList) {
   }
   const name = typeof dict.id === 'string' && dict.id ? dict.id : '(unknown)';
   for (const key of ['id', 'label', 'years']) {
+    // Plain English has no birth-year range; validateAll requires one for every generation.
+    if (key === 'years' && dict.years === undefined) continue;
     if (typeof dict[key] !== 'string' || !dict[key].trim()) {
       errors.push(`${name}: "${key}" must be a non-empty string`);
     }
@@ -282,10 +330,11 @@ export function validateLaughTokens(tokens) {
  * @returns {string[]} all errors across generations
  */
 export function validateAll() {
-  return GENERATION_IDS.flatMap((id) => {
+  return LANGUAGE_IDS.flatMap((id) => {
     const dict = DICTIONARIES[id];
     const errors = validateDictionary(dict, CONCEPTS);
     if (dict && dict.id !== id) errors.push(`${id}: file id "${dict.id}" does not match its registry key`);
+    if (id !== PLAIN_ID && dict && dict.years === undefined) errors.push(`${id}: "years" must be a non-empty string`);
     return errors;
   }).concat(validateLaughTokens(LAUGH_TOKENS));
 }

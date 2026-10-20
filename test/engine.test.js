@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { createConverter, GENERATION_IDS, DICTIONARIES } from '../src/engine/index.js';
+import { createConverter, GENERATION_IDS, LANGUAGE_IDS, DICTIONARIES } from '../src/engine/index.js';
 import { entryText, CONCEPTS } from '../src/engine/dictionaries.js';
 import { SEED_SAMPLES, sampleFor } from '../src/samples.js';
 
@@ -102,22 +102,96 @@ describe('matching', () => {
 });
 
 describe('every generation pair', () => {
-  it('has a seed sample per generation', () => {
-    expect(SEED_SAMPLES.map((s) => s.from).sort()).toEqual([...GENERATION_IDS].sort());
+  it('has a seed sample per generation and for Plain English', () => {
+    expect(SEED_SAMPLES.map((s) => s.from).sort()).toEqual([...LANGUAGE_IDS].sort());
   });
 
-  for (const from of GENERATION_IDS) {
-    it(`converts the ${from} seed to every other generation, all distinct`, async () => {
+  // All 30 ordered pairs, Plain English included: no pair leaves its seed unchanged.
+  for (const from of LANGUAGE_IDS) {
+    it(`converts the ${from} seed to every other option, all distinct`, async () => {
       const input = sampleFor(from);
       const outputs = [];
-      for (const to of GENERATION_IDS.filter((g) => g !== from)) {
+      for (const to of LANGUAGE_IDS.filter((g) => g !== from)) {
         const out = await convert(input, from, to);
         expect(out, `${from} -> ${to}`).not.toBe(input);
         outputs.push(out);
       }
-      expect(new Set(outputs).size).toBe(4);
+      expect(new Set(outputs).size).toBe(LANGUAGE_IDS.length - 1);
     });
   }
+});
+
+describe('Plain English', () => {
+  it('decodes Gen Z slang and laughs into plain words', async () => {
+    const plain = await convert("no bc it's giving main character, real 💀", 'genz', 'plain');
+    expect(plain).toBe('seriously it looks like the star of the show, agreed (laughing)');
+    expect(plain).not.toContain('💀');
+    for (const entries of Object.values(DICTIONARIES.genz.lexicon)) {
+      for (const entry of entries) {
+        expect(containsPhrase(plain, entryText(entry)), `leaked Gen Z "${entryText(entry)}"`).toBe(false);
+      }
+    }
+  });
+
+  it('writes laughs as words, never emoji or slang', async () => {
+    expect(await convert("that's so funny lol", 'millennial', 'plain')).toBe("that's so funny (laughing)");
+    expect(await convert('lol what happened', 'millennial', 'plain')).toBe('haha what happened');
+    expect(await convert("that's wild lmao", 'millennial', 'plain')).toBe("that's wild (laughing hard)");
+    expect(await convert('so funny 💀', 'genz', 'plain')).toBe('so funny (laughing)');
+    expect(await convert('😭 what happened', 'genz', 'plain')).toBe('haha what happened');
+    expect(await convert('so funny 😂', 'boomer', 'plain')).toBe('so funny (laughing)');
+    expect(await convert('so funny 🤣', 'boomer', 'plain')).toBe('so funny (laughing hard)');
+  });
+
+  it('adds no style flourish or signoff', async () => {
+    expect(await convert('that was dope. bye!', 'millennial', 'plain')).toBe('that was cool. bye!');
+  });
+
+  it('converts plain words mid-sentence when Plain English is the source', async () => {
+    expect(await convert('that party was excellent, honestly', 'plain', 'genz')).toBe('that party was bussin, ngl');
+    expect(await convert('my friend is okay with it', 'plain', 'millennial')).toBe('my bestie is kk with it');
+  });
+
+  it('keeps plain words standalone-only for any other source', async () => {
+    expect(await convert('that party was excellent', 'genz', 'millennial')).toBe('that party was excellent');
+    expect(await convert('my friend is okay with it', 'genx', 'millennial')).toBe('my friend is okay with it');
+  });
+
+  it('still decodes slang in Plain English input', async () => {
+    expect(await convert('my friend was on fleek lol', 'plain', 'genz')).toBe('my twin was bussin 💀');
+  });
+
+  it('returns the input unchanged from Plain English to Plain English', async () => {
+    const input = sampleFor('plain');
+    expect(await rules.convert(input, { from: 'plain', to: 'plain' })).toEqual({ text: input, changes: [] });
+  });
+});
+
+describe('emoji names', () => {
+  // Laugh-heavy inputs on top of the seed samples. "skull emoji" is still read
+  // as a laugh, but no output may spell an emoji name the input did not have.
+  const LAUGHS = [
+    'lol', 'lmao', '💀', '😭', '😂', 'haha', "I'm dead", 'HELPPP',
+    "that's so funny lol", 'lol what happened', 'wait 💀 what', 'so funny 😭', 'ok 😂 sure',
+    'haha we need to go', "no way. I'm dead.", 'HELPPP 😭😭', 'lol lol', 'skull emoji that is wild',
+  ];
+  const inputs = [...SEED_SAMPLES.map((s) => s.text), ...LAUGHS];
+
+  it('never writes "emoji" unless the input had it, for every ordered pair', async () => {
+    for (const from of LANGUAGE_IDS) {
+      for (const to of LANGUAGE_IDS.filter((g) => g !== from)) {
+        for (const input of inputs) {
+          const out = await convert(input, from, to);
+          if (!/\bemoji\b/i.test(input)) expect(/\bemoji\b/i.test(out), `${from} -> ${to}: ${input} => ${out}`).toBe(false);
+        }
+      }
+    }
+  });
+
+  it('writes a mid-sentence laugh as 💀 in Gen Alpha', async () => {
+    expect(await convert('lol what happened', 'millennial', 'genalpha')).toBe('💀 what happened');
+    expect(await convert('skull emoji what happened', 'genalpha', 'genz')).toBe('😭 what happened');
+  });
 });
 
 describe('decode and round trips', () => {
@@ -163,7 +237,7 @@ describe('decode and round trips', () => {
 
 describe('style and identity', () => {
   it('returns the input unchanged when from === to', async () => {
-    for (const gen of GENERATION_IDS) {
+    for (const gen of LANGUAGE_IDS) {
       const input = sampleFor(gen);
       expect(await rules.convert(input, { from: gen, to: gen })).toEqual({ text: input, changes: [] });
     }
